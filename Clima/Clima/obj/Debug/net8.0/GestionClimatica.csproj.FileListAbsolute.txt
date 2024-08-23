@@ -1,0 +1,14 @@
+C:\Users\Dante\source\repos\Clima\Clima\bin\Debug\net8.0\GestionClimatica.exe
+C:\Users\Dante\source\repos\Clima\Clima\bin\Debug\net8.0\GestionClimatica.deps.json
+C:\Users\Dante\source\repos\Clima\Clima\bin\Debug\net8.0\GestionClimatica.runtimeconfig.json
+C:\Users\Dante\source\repos\Clima\Clima\bin\Debug\net8.0\GestionClimatica.dll
+C:\Users\Dante\source\repos\Clima\Clima\bin\Debug\net8.0\GestionClimatica.pdb
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.AssemblyInfoInputs.cache
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.AssemblyInfo.cs
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.dll
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\refint\GestionClimatica.dll
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.pdb
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\GestionClimatica.genruntimeconfig.cache
+C:\Users\Dante\source\repos\Clima\Clima\obj\Debug\net8.0\ref\GestionClimatica.dll
