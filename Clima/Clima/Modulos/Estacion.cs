@@ -1,21 +1,65 @@
-﻿namespace GestionClimatica.Modulos
+namespace GestionClimatica.Modulos
 {
     public class Estacion
     {
-        public int NumeroEstacion {  get; set; }
-        public string Direccion { get; set; }
-        public Estacion(int numeroEstacion,string direccion)
+        private static List<string> ciudades = new List<string>();
+        private Ubicacion _ubicacion = null!;
+        private static List<string> meteorologos = new List<string>();
+        private Meteorologo _meteorologo = null!;
+
+        public Ubicacion Ubicacion
         {
-            NumeroEstacion = numeroEstacion;
-            Direccion = direccion;
+            get { return _ubicacion; }
+            set
+            {
+                if (string.IsNullOrEmpty(value.Ciudad))
+                {
+                    throw new ArgumentException("La ciudad no puede ser nula o vacía");
+                }
+                if (ciudades.Contains(value.Ciudad))
+                {
+                    throw new Exception("No puede ingresar una ciudad repetida");
+                }
+                else
+                {
+                    _ubicacion = value;
+                    ciudades.Add(value.Ciudad);
+                }
+            }
         }
-        public void MostrarDetalles()
+
+        public Meteorologo Meteorologo
         {
-            Console.WriteLine($"Numero de estacion: {NumeroEstacion}, Direccion: {Direccion}");
+            get { return _meteorologo; }
+            set
+            {
+                if (string.IsNullOrEmpty(value.Nombre))
+                {
+                    throw new ArgumentException("El nombre del meteorólogo no puede ser nulo o vacío");
+                }
+                if (meteorologos.Contains(value.Nombre))
+                {
+                    throw new Exception("No puede ingresar un meteorólogo repetido");
+                }
+                else
+                {
+                    _meteorologo = value;
+                    meteorologos.Add(value.Nombre);
+                }
+            }
         }
-        public void ObtenerClima(Ubicacion ubicacion)
+
+        public Estacion(Ubicacion ubicacion, Meteorologo meteorologo)
         {
-            ubicacion.MostrarDetalles();
+            Ubicacion = ubicacion;
+            Meteorologo = meteorologo;
+        }
+
+        public void MostrarDetalle()
+        {
+            Console.WriteLine("\nDetalles de la Estación:");
+            Ubicacion.MostrarDetalles();
+            Meteorologo.MostrarDetall();
         }
     }
 }
