@@ -1,17 +1,21 @@
-﻿namespace GestionClimatica.Modulos
+namespace GestionClimatica.Modulos
 {
     public class Clima
     {
-        public decimal TemperaturaC {  get; set; }
+        public double Temperatura { get; set; }
         public string Condicion { get; set; }
-        public Clima(decimal temperaturaC, string condicion)
+
+
+        public Clima(double temperatura, string condicion)
         {
-            TemperaturaC = temperaturaC;
+            Temperatura = temperatura;
             Condicion = condicion;
         }
+
         public void MostrarDetalles()
         {
-            Console.WriteLine($"Temperatura en Celcius: {TemperaturaC}\nCondicion: {Condicion}");
+            Console.WriteLine($"Temperatura: {Temperatura}°C\n" +
+                $"Condicion: {Condicion}");
         }
     }
 }
