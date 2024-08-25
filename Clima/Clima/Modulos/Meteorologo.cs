@@ -1,17 +1,21 @@
-﻿namespace GestionClimatica.Modulos
+namespace GestionClimatica.Modulos
 {
     public class Meteorologo
     {
         public string Nombre { get; set; }
-        public Estacion Estacion { get; set; }
-        public Meteorologo(string nombre, Estacion estacion)
+        public string Especialidad { get; set; }
+
+        public Meteorologo(string nombre, string especialidad)
         {
             Nombre = nombre;
-            Estacion = estacion;
+            Especialidad = especialidad;
         }
-        public void ReportarCondicion(Ubicacion ubicacion)
+
+        public void MostrarDetall()
         {
-            Estacion.ObtenerClima(ubicacion);
+            Console.WriteLine($"Meteorólogo: {Nombre}");
+            Console.WriteLine($"Especialidad: {Especialidad}");
         }
     }
 }
+
